@@ -10,10 +10,9 @@
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Седона">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <button class="main-nav__button-close" type="button">Закрыть меню</button>
-        <ul class="main-nav__list site-list">
+      <nav class="page-header__nav">
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+        <ul class="site-list">
           <li class="site-list__item">
             <a href="index.html">Главная</a>
           </li>
@@ -39,7 +38,7 @@
         <p class="media__description">
           Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
         </p>
-        <div class="photo">
+        <article class="photo">
           <figure class="photo__figure">
             <img src="http://placehold.it/150x100" width="150" height="100" alt="Народные просторы">
             <figcaption class="photo__caption">Софийский собор</figcaption>
@@ -48,10 +47,11 @@
             </p>
           </figure>
           <p class="photo__likes">
+            <button class="photo__finger" type="button"></button>
             1350
           </p>
-        </div>
-        <div class="photo">
+        </article>
+        <article class="photo">
           <figure class="photo__figure">
             <img src="http://placehold.it/150x100" width="150" height="100" alt="Местная растительность">
             <figcaption class="photo__caption">Местная растительность</figcaption>
@@ -60,10 +60,11 @@
             </p>
           </figure>
           <p class="photo__likes">
+            <button class="photo__finger" type="button"></button>
             143
           </p>
-        </div>
-        <div class="photo">
+        </article>
+        <article class="photo">
           <figure class="photo__figure">
             <img src="http://placehold.it/150x100" width="150" height="100" alt="Дорога на север">
             <figcaption class="photo__caption">Дорога на север</figcaption>
@@ -72,10 +73,11 @@
             </p>
           </figure>
           <p class="photo__likes">
+            <button class="photo__finger" type="button"></button>
             96
           </p>
-        </div>
-        <div class="photo">
+        </article>
+        <article class="photo">
           <figure class="photo__figure">
             <img src="http://placehold.it/150x100" width="150" height="100" alt="Мост дьявола">
             <figcaption class="photo__caption">Мост дьявола</figcaption>
@@ -84,9 +86,10 @@
             </p>
           </figure>
           <p class="photo__likes">
+            <button class="photo__finger" type="button"></button>
             254
           </p>
-        </div>
+        </article>
         <div class="video">
           <h3 class="video__title">Все еще сомневаетесь?</h3>
           <p class="video__description">
@@ -95,6 +98,10 @@
           <video class="video__file">
             <source src="" type="">
           </video>
+          <button class="video__toddler" type="button">Ползунок</button>
+          <button class="video__repeat-play" type="button">Повторное воспроизведение</button>
+          <button class="video__subtitles" type="button">Субтитры</button>
+          <button class="video__full-screen" type="button">Полный экран</button>
         </div>
       </section>
     </main>
@@ -117,7 +124,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано:</p>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
   </body>

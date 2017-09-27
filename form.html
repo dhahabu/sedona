@@ -10,10 +10,9 @@
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Седона">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <button class="main-nav__button-close" type="button">Закрыть меню</button>
-        <ul class="main-nav__list site-list">
+      <nav class="page-header__nav">
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+        <ul class="site-list">
           <li class="site-list__item">
             <a href="index.html">Главная</a>
           </li>
@@ -56,8 +55,8 @@
             <label for="email">Электронная почта<sup>*</sup>:</label>
             <input type="email" id="email" name="email" placeholder="Введите e-mail" required>
           </div>
-          <div class="form__item">
-            <h3 class="form__title">Ваше общее впечатление:</h3>
+          <div class="radio-button">
+            <h3 class="radio-button__title">Ваше общее впечатление:</h3>
             <input type="radio" id="positive" name="impression" value="positive" checked>
             <label for="positive">Скорее положительное</label>
             <input type="radio" id="negative" name="impression" value="negative">
@@ -65,8 +64,8 @@
             <input type="radio" id="indefinite" name="impression" value="indefinite">
             <label for="indefinite">Затрудняюсь ответить</label>
           </div>
-          <div class="form__item">
-            <h3 class="form__title">Посещенные достопримечательности:</h3>
+          <div class="checkbox">
+            <h3 class="checkbox__title">Посещенные достопримечательности:</h3>
             <input type="checkbox" id="bridge" name="bridge" checked>
             <label for="bridge">Мост Дьявола</label>
             <input type="checkbox" id="park" name="park" checked>
@@ -103,7 +102,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано:</p>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
   </body>

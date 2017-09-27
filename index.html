@@ -10,10 +10,9 @@
       <a class="page-header__logo">
         <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Седона">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <button class="main-nav__button-close" type="button">Закрыть меню</button>
-        <ul class="main-nav__list site-list">
+      <nav class="page-header__nav">
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+        <ul class="site-list">
           <li class="site-list__item site-list__item--active">
             <a>Главная</a>
           </li>
@@ -48,6 +47,29 @@
             Седона не аттракцион для туристов, там течет своя жизнь
           </p>
         </div>
+        <section class="recommendations">
+          <h2 class="visually-hidden">Рекомендации</h2>
+          <ul class="recommendations__list">
+            <li class="recommendations__item">
+              <h3 class="recommendations__title recommendations__title--house">Жилье</h3>
+              <p class="recommendations__description">
+                Рекомендуем пожить в настоящем мотеле, все как в кино!
+              </p>
+            </li>
+            <li class="recommendations__item">
+              <h3 class="recommendations__title recommendations__title--souvenirs">Сувениры</h3>
+              <p class="recommendations__description">
+                Не только китайского, но и местного производства!
+              </p>
+            </li>
+            <li class="recommendations__item">
+              <h3 class="recommendations__title recommendations__title--food">Еда</h3>
+              <p class="recommendations__description">
+                Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+              </p>
+            </li>
+          </ul>
+        </section>
         <div class="reasons__item reasons__item--bridge">
           <h3 clss="reasons__title">Там есть мост дьявола</h3>
           <p class="reasons__description">
@@ -57,31 +79,6 @@
             Да, по нему можно пройти! Если вы осмелитесь, конечно
           </p>
         </div>
-      </section>
-      <section class="recommendations">
-        <h2 class="visually-hidden">Рекомендации</h2>
-        <ul class="recommendations__list">
-          <li class="recommendations__item">
-            <h3 class="recommendations__title">Жилье</h3>
-            <p class="recommendations__description">
-              Рекомендуем пожить в настоящем мотеле, все как в кино!
-            </p>
-          </li>
-          <li class="recommendations__item">
-            <h3 class="recommendations__title">Сувениры</h3>
-            <p class="recommendations__description">
-              Не только китайского, но и местного производства!
-            </p>
-          </li>
-          <li class="recommendations__item">
-            <h3 class="recommendations__title">Еда</h3>
-            <p class="recommendations__description">
-              Всегда заказывайте фирменный бургер, вы не разочаруетесь!
-            </p>
-          </li>
-        </ul>
-      </section>
-      <section class="reasons">
         <div class="reasons__item">
           <h3 clss="reasons__title">Небольшая площадь</h3>
           <p class="reasons__description">
@@ -140,7 +137,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано:</p>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
   </body>

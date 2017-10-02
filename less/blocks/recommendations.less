@@ -1,0 +1,23 @@
+.recommendations {
+  padding: 0 20px 35px;
+  text-align: left;
+}
+
+.recommendations__title {
+  position: relative;
+  padding: 35px 0 25px 50px;
+  font: bold 18px/26px @font-family;
+  color: #000000;
+  &::before {
+    .pseudo-element();
+    left: 0;
+    top: 30px;
+    width: 38px;
+    height: 37px;
+    border: 1px solid red;//для наглядности, потом убрать
+  }
+}
+
+.recommendations__description {
+  padding-left: 50px;
+}

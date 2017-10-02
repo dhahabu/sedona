@@ -1,0 +1,30 @@
+.contacts__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  &::before {
+    .pseudo-element();
+    bottom: 0;
+    right: 0;
+    width: 58px;
+    height: 58px;
+    background: #e6e6e6;
+  }
+}
+
+.contacts__wrapper:last-child {
+  margin-bottom: 25px;
+}
+
+.contacts__label {
+  align-self: flex-start;
+  margin-bottom: 10px;
+  padding-left: 22px;
+  font: normal 14px/26px @font-family;
+}
+
+.contacts__input {
+  .input-style();
+  padding: 16px 58px 16px 22px;
+}

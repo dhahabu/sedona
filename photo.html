@@ -4,29 +4,32 @@
     <meta charset="utf-8">
     <title>Фото и видео</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Седона">
-      </a>
       <nav class="page-header__nav">
-        <button class="page-header__toggle" type="button">Открыть меню</button>
         <ul class="site-list">
           <li class="site-list__item">
-            <a href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a>Фото и видео</a>
+            <a class="site-list__link">Фото и видео</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Форма отзыва</a>
+            <a class="site-list__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="site-list__item">
-            <a href="#">HTML Academy</a>
+            <a class="site-list__link" href="#">HTML Academy</a>
           </li>
         </ul>
       </nav>
+      <div class="page-header__wrapper">
+        <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
+        </a>
+      </div>
     </header>
     <main class="page-main">
       <section class="intro intro--mini">
@@ -40,55 +43,71 @@
         </p>
         <article class="photo">
           <figure class="photo__figure">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Народные просторы">
-            <figcaption class="photo__caption">Софийский собор</figcaption>
-            <p class="photo__author">
-              Автор фото: Борис
-            </p>
+            <img class="photo__image" src="http://placehold.it/150x100" width="150" height="100" alt="Народные просторы">
+            <figcaption class="photo__caption">
+              <p class="photo__name">
+                Софийский собор
+              </p>
+              <p class="photo__author">
+                Автор фото: Борис
+              </p>
+              <p class="photo__likes">
+                <button class="photo__finger" type="button"></button>
+                1350
+              </p>
+            </figcaption>
           </figure>
-          <p class="photo__likes">
-            <button class="photo__finger" type="button"></button>
-            1350
-          </p>
         </article>
         <article class="photo">
           <figure class="photo__figure">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Местная растительность">
-            <figcaption class="photo__caption">Местная растительность</figcaption>
-            <p class="photo__author">
-              Автор фото: Сергей
-            </p>
+            <img class="photo__image" src="http://placehold.it/150x100" width="150" height="100" alt="Местная растительность">
+            <figcaption class="photo__caption">
+              <p class="photo__name">
+                Местная растительность
+              </p>
+              <p class="photo__author">
+                Автор фото: Сергей
+              </p>
+              <p class="photo__likes">
+                <button class="photo__finger" type="button"></button>
+                143
+              </p>
+            </figcaption>
           </figure>
-          <p class="photo__likes">
-            <button class="photo__finger" type="button"></button>
-            143
-          </p>
         </article>
         <article class="photo">
           <figure class="photo__figure">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Дорога на север">
-            <figcaption class="photo__caption">Дорога на север</figcaption>
-            <p class="photo__author">
-              Автор фото: Петр
-            </p>
+            <img class="photo__image" src="http://placehold.it/150x100" width="150" height="100" alt="Дорога на север">
+            <figcaption class="photo__caption">
+              <p class="photo__name">
+                Дорога на север
+              </p>
+              <p class="photo__author">
+                Автор фото: Петр
+              </p>
+              <p class="photo__likes">
+                <button class="photo__finger" type="button"></button>
+                96
+              </p>
+            </figcaption>
           </figure>
-          <p class="photo__likes">
-            <button class="photo__finger" type="button"></button>
-            96
-          </p>
         </article>
         <article class="photo">
           <figure class="photo__figure">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Мост дьявола">
-            <figcaption class="photo__caption">Мост дьявола</figcaption>
-            <p class="photo__author">
-              Автор фото: Антон
-            </p>
+            <img class="photo__image" src="http://placehold.it/150x100" width="150" height="100" alt="Мост дьявола">
+            <figcaption class="photo__caption">
+              <p class="photo__name">
+                Мост дьявола
+              </p>
+              <p class="photo__author">
+                Автор фото: Антон
+              </p>
+              <p class="photo__likes">
+                <button class="photo__finger" type="button"></button>
+                254
+              </p>
+            </figcaption>
           </figure>
-          <p class="photo__likes">
-            <button class="photo__finger" type="button"></button>
-            254
-          </p>
         </article>
         <div class="video">
           <h3 class="video__title">Все еще сомневаетесь?</h3>
@@ -98,16 +117,18 @@
           <video class="video__file">
             <source src="" type="">
           </video>
-          <button class="video__toddler" type="button">Ползунок</button>
-          <button class="video__repeat-play" type="button">Повторное воспроизведение</button>
-          <button class="video__subtitles" type="button">Субтитры</button>
-          <button class="video__full-screen" type="button">Полный экран</button>
+          <div class="video__wrapper">
+            <button class="video__toddler" type="button">Ползунок</button>
+            <button class="video__repeat-play" type="button">Повторное воспроизведение</button>
+            <button class="video__subtitles" type="button">Субтитры</button>
+            <button class="video__full-screen" type="button">Полный экран</button>
+          </div>
         </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__visitsedona">
-        <a href="#">#visitsedona</a>
+        <a class="page-footer__link" href="#">#visitsedona</a>
       </div>
       <div class="page-footer__social social">
         <ul class="social__list">

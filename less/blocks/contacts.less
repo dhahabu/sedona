@@ -29,3 +29,55 @@
   .input-style();
   padding: 16px 58px 16px 22px;
 }
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    width: 100%;
+    margin-top: 65px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts__wrapper {
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+
+  .contacts__wrapper:last-child {
+    margin-bottom: 0;
+  }
+
+  .contacts__label {
+  align-self: stretch;
+  margin-bottom: 0;
+  padding-left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+
+  .contacts__label {
+    align-self: center;
+    margin-right: 17px;
+  }
+
+  .contacts__input {
+    width: 315px;
+  }
+
+  .contacts__visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+  }
+}

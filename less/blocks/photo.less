@@ -1,6 +1,6 @@
 .photo {
   padding: 23px 0 20px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid @gray;
 }
 
 .photo__figure {
@@ -13,7 +13,6 @@
 }
 
 .photo__name {
-  margin-bottom: 10px;
   font: bold 14px/24px @font-family;
   color: #000000;
 }
@@ -25,10 +24,76 @@
 }
 
 .photo__likes {
-  font: bold 14px/24px @font-family;
+  font: bold 14px/22px @font-family;
   color: #000000;
 }
 
 .photo__finger {
-  margin-right: 15px;
+  width: 34px;
+  height: 22px;
+  padding: 0;
+  background: yellow;//потом убрать
+  border: none;
+  vertical-align: top;
+}
+
+@media (min-width: @tablet-width) {
+  .photo {
+    width: 324px;
+    padding: 0;
+    border: none;
+    border: 1px solid red;//потом убрать
+  }
+
+  .photo:first-of-type {
+    width: 100%;
+  }
+
+  .photo__figure {
+    margin: 0;
+  }
+
+  .photo__image {
+    margin: 0;
+  }
+
+  .photo__author {
+    margin-bottom: 0;
+  }
+
+  .photo__caption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background: @light-gray;
+  }
+
+  .photo:nth-of-type(2n+3) .photo__caption {
+    background: #eaeaea;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo {
+    width: 33.3%;
+  }
+
+  .photo__figure {
+    position: relative;
+  }
+
+  .photo__caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(178, 178, 178, 0.3);
+  }
+
+  .photo__name,
+  .photo__author,
+  .photo__likes {
+    color: #ffffff;
+  }
 }

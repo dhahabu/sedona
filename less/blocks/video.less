@@ -1,4 +1,5 @@
 .video {
+  position: relative;
   padding-top: 35px;
 }
 
@@ -16,13 +17,88 @@
 }
 
 .video__file {
-  width: 100%;//временно, потом убрать
-  border: 1px solid red;//временно, потом убрать
+  width: 100%;
+  border: 1px solid red;//потом убрать
 }
 
 .video__wrapper {
-  width: 280px;//временно, потом убрать
-  height: 111px;//временно, потом убрать
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
   margin: 0 auto;
-  border: 1px solid red;//временно, потом убрать
+  margin-top: -7px;//без него блок слегка ниже... не смогла понять почему
+  background: @light-gray;
+}
+
+.video__toddler {
+  position: absolute;
+  bottom: 100%;
+  width: 100%;
+  height: 45px;
+  background: rgba(102, 102, 102, 0.6);
+}
+
+.video__repeat-play {
+  width: 70px;
+  margin-right: auto;
+}
+
+.video__full-screen {
+  width: 70px;
+}
+
+@media (min-width: @tablet-width) {
+  .video {
+    padding-top: 60px;
+  }
+
+  .video__title {
+    margin-bottom: 20px;
+    font: bold 30px/30px @font-family;
+  }
+
+  .video__description {
+    margin-bottom: 65px;
+    padding: 0 115px;
+  }
+
+  .video__wrapper {
+    position: absolute;
+    bottom: 6px;//??? не понимаю
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    height: 93px;
+    background: rgba(102, 102, 102, 0.6);
+  }
+
+  .video__toddler {
+    position: static;
+    width: 389px;
+    margin-right: auto;
+    background: none;
+  }
+
+  .video__repeat-play {
+    order: -1;
+    width: 93px;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  .video__file {
+    height: 500px;
+    margin: 0 auto;
+  }
+
+  .video__toddler {
+    width: 540px;
+  }
 }

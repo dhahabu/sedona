@@ -1,13 +1,19 @@
 .textarea {
   border-bottom: none;
+  margin-bottom: 45px;
 }
 
 .textarea__input {
   width: 100%;
-  margin-bottom: 45px;
   padding: 15px 22px;
   font: bold 18px/26px @font-family;
   color: #000000;
-  background: #f2f2f2;
+  background: @light-gray;
   border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .textarea {
+    width: 100%;
+  }
 }

@@ -22,3 +22,47 @@
 .recommendations__description {
   padding-left: 50px;
 }
+
+@media (min-width: @tablet-width) {
+  .recommendations {
+    display: flex;
+    padding: 55px 0 60px;
+    text-align: center;
+  }
+
+  .recommendations__item {
+    width: 33.3%;
+    padding: 0 48px;
+  }
+
+  .recommendations__item--souvenirs {
+    order: 1;
+    padding: 0 45px;
+  }
+
+  .recommendations__title {
+    margin-bottom: 20px;
+    padding: 0;
+    padding-top: 95px;
+    font: bold 21px/26px @font-family;
+  }
+
+  .recommendations__title::before {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 77px;
+    height: 75px;
+  }
+
+  .recommendations__description {
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .recommendations__item--souvenirs {
+    order: 1;
+    padding: 0 93px;
+  }
+}

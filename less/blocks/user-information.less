@@ -4,6 +4,10 @@
   margin-bottom: 20px;
 }
 
+.user-information__wrapper:last-of-type {
+  margin-bottom: 0;
+}
+
 .user-information__label {
   margin-right: 15px;
   font: normal 14px/26px @font-family;
@@ -12,4 +16,18 @@
 .user-information__input {
   .input-style();
   padding: 16px 22px;
+}
+
+@media (min-width: @tablet-width) {
+  .user-information {
+    width: 324px;
+    padding-left: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-information {
+    width: 480px;
+    padding-left: 80px;
+  }
 }

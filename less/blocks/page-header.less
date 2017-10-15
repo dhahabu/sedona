@@ -5,7 +5,7 @@
 
 .page-header__wrapper {
   position: relative;
-  min-height: 56px;
+  min-height: 55px;
 }
 
 .page-header__logo {
@@ -18,11 +18,51 @@
 
 .page-header__toggle {
   position: absolute;
-  top: -222px;
+  top: 17px;
   right: 20px;
   z-index: 3;
   width: 23px;
   height: 23px;
+  border: none;
+  background: none;
+
+  &::before,
+  &::after {
+    .pseudo-element();
+    right: -3px;
+    top: 9px;
+    width: 28px;
+    height: 4px;
+    background: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(44deg);
+  }
+
+  &::after {
+    transform: rotate(-44deg);
+  }
+}
+
+.page-header__nav--closed .site-list {
+  display: none;
+}
+
+.page-header__nav--closed .page-header__toggle {
+  &::before {
+    right: -1px;
+    top: 8px;
+    width: 23px;
+    background: @blue;
+    transform: none;
+    box-shadow: 0 8px 0 0 @blue,
+      0 -8px 0 0 @blue;
+  }
+
+  &::after {
+    content: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -40,5 +80,9 @@
 
   .page-header__toggle {
     display: none;
+  }
+
+  .page-header__nav--closed .site-list {
+    display: flex;
   }
 }

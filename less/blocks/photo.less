@@ -1,5 +1,5 @@
 .photo {
-  padding: 23px 0 20px;
+  padding: 22px 0 18px;
   border-bottom: 1px solid @gray;
 }
 
@@ -9,7 +9,9 @@
 
 .photo__image {
   display: block;
-  margin: 0 auto 20px;
+  width: 280px;//потом убрать
+  height: 280px;//потом убрать
+  margin: 0 auto 15px;
 }
 
 .photo__name {
@@ -17,8 +19,11 @@
   color: #000000;
 }
 
+.photo-wrapper {
+  margin-bottom: 9px;
+}
+
 .photo__author {
-  margin-bottom: 15px;
   font: normal 14px/24px @font-family;
   text-transform: none;
 }
@@ -39,21 +44,31 @@
 
 @media (min-width: @tablet-width) {
   .photo {
-    width: 324px;
+    width: 50%;
     padding: 0;
-    border: 1px solid red;//потом убрать
+    border-bottom: none;
   }
 
   .photo:first-of-type {
     width: 100%;
   }
 
+  .photo__image {
+    width: 100%;//потом убрать
+    height: 267px;//потом убрать
+    margin: 0;
+  }
+
+  .photo__image--first {
+    height: 400px;//потом убрать
+  }
+
   .photo__figure {
     margin: 0;
   }
 
-  .photo__image {
-    margin: 0;
+  .photo-wrapper {
+    margin-bottom: 0;
   }
 
   .photo__author {
@@ -64,17 +79,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 20px;
+    padding: 16px 0 16px 20px;
     background: @light-gray;
   }
 
   .photo:nth-of-type(2n+3) .photo__caption {
     background: #eaeaea;
   }
+
+  .photo__likes {
+    width: 85px;
+  }
+
+  .photo__finger {
+    width: 28px;
+    height: 25px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .photo {
+    flex-grow: 1;
     width: 33.3%;
   }
 
@@ -87,6 +112,10 @@
     left: 0;
     right: 0;
     bottom: 0;
+    background: rgba(178, 178, 178, 0.3);
+  }
+
+  .photo:nth-of-type(2n+3) .photo__caption {
     background: rgba(178, 178, 178, 0.3);
   }
 

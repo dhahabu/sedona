@@ -10,6 +10,7 @@
     <div class="container">
       <header class="page-header">
         <nav class="page-header__nav">
+          <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="site-list">
             <li class="site-list__item">
               <a class="site-list__link site-list__link--active">Главная</a>
@@ -26,29 +27,28 @@
           </ul>
         </nav>
         <div class="page-header__wrapper">
-          <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <a class="page-header__logo">
-            <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Седона">
+            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
           </a>
         </div>
       </header>
       <main class="page-main">
         <section class="intro">
           <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-          <img class="intro__title" src="http://placehold.it/150x100" width="150" height="100" alt="Добро пожаловать в Седону!">
+          <img class="intro__title" src="img/text-sedona-index.svg" width="280" height="213" alt="Добро пожаловать в Седону!">
         </section>
         <section class="reasons">
           <b class="reasons__slogan">
-            Седона - небольшой городок в Аризоне, заслуживающий большего!
+            Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!
           </b>
           <h2 class="reasons__header">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
           <div class="reasons__wrapper">
-            <div class="reasons__item reasons__item--white">
-              <h3 class="reasons__title reasons__title--white">Настоящий городок</h3>
-              <p class="reasons__description reasons__description--white">
+            <div class="reasons__item reasons__item--town">
+              <h3 class="reasons__title">Настоящий городок</h3>
+              <p class="reasons__description">
                 &mdash; №1 &mdash;
               </p>
-              <p class="reasons__description reasons__description--white">
+              <p class="reasons__description">
                 Седона не аттракцион для туристов, там течет своя жизнь
               </p>
             </div>
@@ -57,31 +57,31 @@
           <section class="recommendations">
             <h2 class="visually-hidden">Рекомендации</h2>
             <div class="recommendations__item">
-              <h3 class="recommendations__title recommendations__title--house">Жилье</h3>
+              <h3 class="recommendations__title">Жилье</h3>
               <p class="recommendations__description">
                 Рекомендуем пожить в настоящем мотеле, все как в кино!
               </p>
             </div>
             <div class="recommendations__item recommendations__item--souvenirs">
-              <h3 class="recommendations__title recommendations__title--souvenirs">Сувениры</h3>
+              <h3 class="recommendations__title">Сувениры</h3>
               <p class="recommendations__description">
-                Не только китайского, но и местного производства!
+                Не только китайского,<br> но и местного производства!
               </p>
             </div>
             <div class="recommendations__item">
-              <h3 class="recommendations__title recommendations__title--food">Еда</h3>
+              <h3 class="recommendations__title">Еда</h3>
               <p class="recommendations__description">
                 Всегда заказывайте фирменный бургер, вы не разочаруетесь!
               </p>
             </div>
           </section>
-          <div class="reasons__wrapper reasons__wrapper--reverse">
-            <div class="reasons__item reasons__item--white">
-              <h3 class="reasons__title reasons__title--white">Там есть мост дьявола</h3>
-              <p class="reasons__description reasons__description--white">
+          <div class="reasons__wrapper">
+            <div class="reasons__item reasons__item--bridge">
+              <h3 class="reasons__title">Там есть<br> мост дьявола</h3>
+              <p class="reasons__description">
                 &mdash; №2 &mdash;
               </p>
-              <p class="reasons__description reasons__description--white">
+              <p class="reasons__description">
                 Да, по нему можно пройти! Если вы осмелитесь, конечно
               </p>
             </div>
@@ -98,7 +98,7 @@
               </p>
             </div>
             <div class="reasons__item">
-              <h3 class="reasons__title">Красивая дорога</h3>
+              <h3 class="reasons__title reasons__title--width">Красивая дорога</h3>
               <p class="reasons__description">
                 &mdash; №4 &mdash;
               </p>
@@ -107,7 +107,7 @@
               </p>
             </div>
             <div class="reasons__item">
-              <h3 class="reasons__title">Мало туристов</h3>
+              <h3 class="reasons__title reasons__title--width">Мало туристов</h3>
               <p class="reasons__description">
                 &mdash; №5 &mdash;
               </p>
@@ -120,7 +120,7 @@
         <section class="hotel-search">
           <h2 class="hotel-search__title">Заинтересовались?</h2>
           <p class="hotel-search__description">
-            Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+            Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
           <a class="hotel-search__button button" href="#">Найти гостиницу</a>
           <div class="hotel-search__map">
@@ -135,19 +135,19 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy">Мы в Твиттере</a>
+              <a class="social__link social__link--twitter button" href="#"><span class="visually-hidden">Мы в Твиттере</span></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              <a class="social__link social__link--facebook button" href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy">Мы в Ютубе</a>
+              <a class="social__link social__link--youtube button" href="#"><span class="visually-hidden">Мы в Ютубе</span></a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <p class="copyright__text">Разработано:</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <p class="copyright__text">Разработано</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
         </div>
       </footer>
     </div>

@@ -1,7 +1,17 @@
 .button {
   display: block;
   border: none;
-  color: #ffffff;
+  text-align: center;
   text-transform: uppercase;
+  color: #ffffff;
   background: @blue;
+
+  &:hover {
+    background: @blue-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background: @blue-active;
+  }
 }

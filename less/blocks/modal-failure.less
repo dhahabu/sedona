@@ -1,0 +1,53 @@
+.modal-failure {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 320px;
+  min-height: 280px;
+  padding: 40px 20px 0;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.modal-failure__title {
+  margin-bottom: 26px;
+}
+
+.modal-failure__description {
+  margin-bottom: 23px;
+  padding: 0 30px;
+  font: normal 14px/24px @font-family;
+}
+
+.modal-failure__button {
+  width: 180px;
+  margin: 0 auto;
+  padding: 16px 10px;
+  font: bold 18px/26px @font-family;
+}
+
+@media (min-width: @tablet-width) {
+  .modal-failure {
+    width: 400px;
+    padding: 51px 60px 49px;
+  }
+
+  .modal-failure__title {
+    padding: 0 30px;
+    font: bold 30px/40px @font-family;
+  }
+
+  .modal-failure__description {
+    margin-bottom: 35px;
+    padding: 0;
+  }
+
+  .modal-failure__button {
+    width: 272px;
+    margin: 0 auto;
+    font: bold 21px/26px @font-family;
+  }
+}

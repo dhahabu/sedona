@@ -72,8 +72,6 @@
 
 .reasons__image {
   display: block;
-  width: 320px;//потом убрать
-  height: 260px;//потом убрать
 }
 
 @media (min-width: @tablet-width) {
@@ -130,8 +128,8 @@
   }
 
   .reasons__image {
-    width: 66.7%;//потом удалить
-    height: 256px;//потом удалить
+    width: 512px;
+    height: 256px;
   }
 
   .reasons__item:not(:last-of-type)::before {
@@ -166,5 +164,28 @@
 
   .reasons__title--width {
     padding: 0 70px;
+  }
+
+  .reasons__wrapper {
+    align-items: center;
+  }
+
+  .reasons__picture {
+    width: 800px;
+    height: 256px;
+    overflow: hidden;
+  }
+
+  .reasons__image {
+    width: 800px;
+    height: 400px;
+  }
+
+  .reasons__image--town {
+    margin-top: -71px;
+  }
+
+  .reasons__image--bridge {
+    margin-top: -76px;
   }
 }

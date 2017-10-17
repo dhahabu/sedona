@@ -28,14 +28,18 @@
         </nav>
         <div class="page-header__wrapper">
           <a class="page-header__logo" href="index.html">
-            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Седона">
+            </picture>
           </a>
         </div>
       </header>
       <main class="page-main">
         <section class="intro intro--mini">
           <h1 class="visually-hidden">Седона</h1>
-          <img class="intro__title" src="img/text-sedona.svg" width="329" height="39" alt="Седона">
+          <img class="intro__title" src="img/text-sedona.svg" width="229" height="39" alt="Седона">
         </section>
         <section class="media">
           <h2 class="media__title">Фото и видео</h2>
@@ -44,7 +48,11 @@
           </p>
           <article class="photo">
             <figure class="photo__figure">
-              <img class="photo__image photo__image--first" src="http://placehold.it/150x100" alt="Народные просторы">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                <img class="photo__image photo__image--first" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы">
+              </picture>
               <figcaption class="photo__caption">
                 <div class="photo-wrapper">
                   <p class="photo__name">
@@ -63,7 +71,11 @@
           </article>
           <article class="photo">
             <figure class="photo__figure">
-              <img class="photo__image" src="http://placehold.it/150x100" alt="Местная растительность">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" width="280" height="280" alt="Местная растительность">
+              </picture>
               <figcaption class="photo__caption">
                 <div class="photo-wrapper">
                   <p class="photo__name">
@@ -82,7 +94,11 @@
           </article>
           <article class="photo">
             <figure class="photo__figure">
-              <img class="photo__image" src="http://placehold.it/150x100" alt="Дорога на север">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога на север">
+              </picture>
               <figcaption class="photo__caption">
                 <div class="photo-wrapper">
                   <p class="photo__name">
@@ -101,7 +117,11 @@
           </article>
           <article class="photo">
             <figure class="photo__figure">
-              <img class="photo__image" src="http://placehold.it/150x100" alt="Мост дьявола">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Мост дьявола">
+              </picture>
               <figcaption class="photo__caption">
                 <div class="photo-wrapper">
                   <p class="photo__name">
@@ -123,9 +143,13 @@
             <p class="video__description">
               Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
             </p>
-            <video class="video__file">
-              <source src="" type="">
-            </video>
+            <div class="video__file">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+                <img class="video__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="320" height="201" alt="Видео">
+              </picture>
+            </div>
             <div class="video__wrapper">
               <button class="video__toddler" type="button">Ползунок</button>
               <button class="video__repeat-play" type="button">Повторное воспроизведение</button>

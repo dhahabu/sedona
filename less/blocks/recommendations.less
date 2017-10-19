@@ -41,7 +41,7 @@
     padding: 0 50px;
   }
 
-  .recommendations__item--souvenirs {
+  .recommendations__item--gift {
     order: 1;
     padding: 0 45px;
   }
@@ -68,14 +68,22 @@
   .recommendations__description br {
     display: inline;
   }
+
+  .recommendations__title--house::before {
+    background: url("../img/sprite.svg#icon-house") no-repeat bottom;
+  }
+
+  .recommendations__item--gift::before {
+    background: url("../img/sprite.svg#icon-gift") no-repeat bottom;
+  }
+
+  .recommendations__title--burger::before {
+    background: url("../img/sprite.svg#icon-burger") no-repeat bottom;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .recommendations {
     padding: 56px 0 54px;
   }
-
-  // .recommendations__item--souvenirs {
-  //   padding: 0 90px;
-  // }
 }

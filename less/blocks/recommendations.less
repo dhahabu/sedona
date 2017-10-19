@@ -9,15 +9,33 @@
   padding-left: 50px;
   font: bold 18px/26px @font-family;
   color: #000000;
+}
 
-  &::before {
-    .pseudo-element();
-    left: -2px;
-    top: -12px;
-    width: 43px;
-    height: 43px;
-    border: 1px solid red;//потом убрать
-  }
+.recommendations__icon-house {
+  position: absolute;
+  top: -9px;
+  left: 2px;
+  width: 37px;
+  height: 36px;
+  fill: @blue;
+}
+
+.recommendations__icon-gift {
+  position: absolute;
+  top: -11px;
+  left: 5px;
+  width: 32px;
+  height: 37px;
+  fill: @blue;
+}
+
+.recommendations__icon-burger {
+  position: absolute;
+  top: -4px;
+  left: -1px;
+  width: 38px;
+  height: 34px;
+  fill: @blue;
 }
 
 .recommendations__description {
@@ -53,12 +71,28 @@
     font: bold 21px/26px @font-family;
   }
 
-  .recommendations__title::before {
-    top: 0;
+  .recommendations__icon-house {
+    top: 4px;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 78px;
-    height: 76px;
+    width: 75px;
+    height: 72px;
+  }
+
+  .recommendations__icon-gift {
+    top: 1px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 64px;
+    height: 75px;
+  }
+
+  .recommendations__icon-burger {
+    top: 7px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 77px;
+    height: 68px;
   }
 
   .recommendations__description {
@@ -67,18 +101,6 @@
 
   .recommendations__description br {
     display: inline;
-  }
-
-  .recommendations__title--house::before {
-    background: url("../img/sprite.svg#icon-house") no-repeat bottom;
-  }
-
-  .recommendations__item--gift::before {
-    background: url("../img/sprite.svg#icon-gift") no-repeat bottom;
-  }
-
-  .recommendations__title--burger::before {
-    background: url("../img/sprite.svg#icon-burger") no-repeat bottom;
   }
 }
 

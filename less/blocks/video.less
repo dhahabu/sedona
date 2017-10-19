@@ -24,30 +24,63 @@
 .video__wrapper {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   width: 280px;
   height: 66px;
-  margin: 0 auto;
-  margin-top: -5px;
+  margin: -5px auto 0;
+  padding: 2px 17px 0 19px;
   background: @light-gray;
+  box-shadow: 0 -45px 0 0 rgba(0, 0, 0, 0.6);
 }
 
 .video__toddler {
   position: absolute;
-  bottom: 100%;
-  width: 100%;
-  height: 45px;
+  top: -27px;
+  left: 22px;
+  width: 235px;
+  height: 11px;
+  padding: 0;
+  background: none;
   border: none;
-  background: rgba(0, 0, 0, 0.6);
 }
 
-.video__repeat-play {
-  width: 70px;
+.video__scale {
+  position: relative;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.video__point {
+  position: absolute;
+  top: -3px;
+  left: 36px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.video__replay {
   margin-right: auto;
+  background: none;
+  border: none;
 }
 
-.video__full-screen {
-  width: 70px;
+.video__subtitles {
+  margin-right: 19px;
+  background: none;
+  border: none;
+}
+
+.video__fullscreen {
+  background: none;
+  border: none;
+}
+
+.video__icon-replay,
+.video__icon-subtitles,
+.video__icon-fullscreen {
+  fill: #5c6870;
 }
 
 @media (min-width: @tablet-width) {
@@ -72,11 +105,13 @@
 
   .video__wrapper {
     position: absolute;
-    bottom: 6px;
+    bottom: 5px;
     flex-wrap: nowrap;
     align-items: center;
     width: 100%;
     height: 93px;
+    padding: 0 35px 0 29px;
+    box-shadow: none;
     background: rgba(0, 0, 0, 0.6);
   }
 
@@ -87,10 +122,19 @@
     background: none;
   }
 
-  .video__repeat-play {
+  .video__replay {
     order: -1;
-    width: 93px;
-    margin-right: 0;
+    margin-right: 36px;
+  }
+
+  .video__point {
+    left: 113px;
+  }
+
+  .video__icon-replay,
+  .video__icon-subtitles,
+  .video__icon-fullscreen {
+    fill: #ffffff;
   }
 }
 
@@ -109,6 +153,10 @@
   .video__description {
     margin-bottom: 71px;
     padding: 0 180px;
+  }
+
+  .video__wrapper {
+    padding: 0 37px 0 28px;
   }
 
   .video__toddler {

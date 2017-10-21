@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона</title>
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/picturefill.js"></script>
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
@@ -68,7 +69,7 @@
               <a class="site-list__link" href="form.html">Форма отзыва</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">HTML Academy</a>
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </nav>
@@ -110,8 +111,8 @@
           </div>
           <section class="recommendations">
             <h2 class="visually-hidden">Рекомендации</h2>
-            <div class="recommendations__item">
-              <h3 class="recommendations__title recommendations__title--house">
+            <div class="recommendations__item recommendations__item--house">
+              <h3 class="recommendations__title">
                 <svg class="recommendations__icon-house">
                   <use xlink:href="#icon-house"></use>
                 </svg>
@@ -122,7 +123,7 @@
               </p>
             </div>
             <div class="recommendations__item recommendations__item--gift">
-              <h3 class="recommendations__title recommendations__title--gift">
+              <h3 class="recommendations__title">
                 <svg class="recommendations__icon-gift">
                   <use xlink:href="#icon-gift"></use>
                 </svg>
@@ -132,8 +133,8 @@
                 Не только китайского,<br> но и местного производства!
               </p>
             </div>
-            <div class="recommendations__item">
-              <h3 class="recommendations__title recommendations__title--burger">
+            <div class="recommendations__item recommendations__item--burger">
+              <h3 class="recommendations__title">
                 <svg class="recommendations__icon-burger">
                   <use xlink:href="#icon-burger"></use>
                 </svg>
@@ -196,12 +197,7 @@
             Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
           <a class="hotel-search__button button" href="#">Найти гостиницу</a>
-          <div class="hotel-search__map">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-              <img src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" width="320" height="350" alt="Карта">
-            </picture>
+          <div class="hotel-search__map" id="yandex-map">
           </div>
         </section>
       </main>
@@ -248,5 +244,6 @@
         </div>
       </footer>
     </div>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A335796ec8cdd862ab8aacbede6df46500a384fdd5823d625c380276c84a98050&amp;height=350&amp;lang=ru_RU&amp;id=yandex-map&amp;scroll=false"></script>
   </body>
 </html>

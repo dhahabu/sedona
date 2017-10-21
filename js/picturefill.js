@@ -1439,7 +1439,7 @@
         pf.fillImg = noop;
     } else {
 
-         // Set up picture polyfill by polling the document
+          // Set up picture polyfill by polling the document
         (function() {
             var isDomReady;
             var regReady = window.attachEvent ? /d$|^c/ : /d$|^c|^i/;
@@ -1540,5 +1540,4 @@
     if ( !pf.supPicture ) {
         types[ "image/webp" ] = detectTypeSupport("image/webp", "data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==" );
     }
-
 } )( window, document );

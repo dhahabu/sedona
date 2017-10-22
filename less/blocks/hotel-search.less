@@ -29,6 +29,30 @@
   color: #ffffff;
 }
 
+.hotel-search__map {
+  position: relative;
+  height: 350px;
+  background: #cce0a4 url("../img/bg-map-mobile@1x.jpg") no-repeat bottom;
+  background-size: auto 100%;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+    background-size: 640px auto;
+  }
+}
+
+.hotel-search__map::before {
+  .pseudo-element();
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 27px;
+  height: 27px;
+  background: #81b4d4;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+}
+
 @media (min-width: @tablet-width) {
   .hotel-search {
     padding-top: 53px;
@@ -57,11 +81,16 @@
   }
 
   .hotel-search__map {
-    height: 350px;//под картой какой-то отступ...
+    background: #cce0a4 url("../img/bg-map-tablet@1x.jpg") no-repeat bottom;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+      background-size: 1536px auto;
+    }
   }
 
-  .hotel-search__map img {
-    width: 768px;
+  .hotel-search__map::before {
+    top: 51%;
   }
 }
 
@@ -72,10 +101,19 @@
   }
 
   .hotel-search__button {
-    margin: 0 auto 65px;
+    margin: 0 auto 66px;
   }
 
-  .hotel-search__map img {
-    width: 1200px;
+  .hotel-search__map {
+    background: #cce0a4 url("../img/bg-map-desktop@1x.jpg") no-repeat bottom;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+      background-size: 2400px auto;
+    }
+  }
+
+  .hotel-search__map::before {
+    top: 50%;
   }
 }

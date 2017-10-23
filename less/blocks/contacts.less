@@ -40,6 +40,15 @@
   .input-style();
   height: 58px;
   padding: 16px 58px 16px 22px;
+
+  &:hover {
+    background: @gray;
+  }
+
+  &:focus {
+    background: none;
+    outline: 4px solid @gray;
+  }
 }
 
 @media (min-width: @tablet-width) {

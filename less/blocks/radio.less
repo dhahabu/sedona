@@ -25,6 +25,18 @@
   border-radius: 50%;
 }
 
+.radio__label:hover::before {
+  background: @gray;
+}
+
+.radio__label:active::before {
+  background: #d5d5d5;
+}
+
+.radio__input:focus + .radio__label::before {
+    background: @gray;
+}
+
 .radio__input:checked + .radio__label::after {
   .pseudo-element();
   width: 22px;
@@ -33,6 +45,10 @@
   left: 17px;
   background: #333333;
   border-radius: 50%;
+}
+
+.radio__input:checked + .radio__label:active::after {
+  background: #a4a4a4;
 }
 
 @media (min-width: @tablet-width) {

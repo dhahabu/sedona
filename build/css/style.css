@@ -327,7 +327,7 @@ a {
   display: none;
 }
 .container {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
@@ -735,7 +735,10 @@ a {
   font: normal 14px/26px "PT Sans", "Arial", sans-serif;
   color: #333333;
   background: #81b3d2 url("../img/bg-triangle.svg") no-repeat bottom;
-  background-size: auto 100%;
+  background-size: cover;
+}
+.reasons__wrapper {
+  outline: 1px solid red;
 }
 .reasons__item {
   position: relative;
@@ -763,7 +766,7 @@ a {
   position: absolute;
   bottom: 0;
   left: 20px;
-  width: 280px;
+  right: 20px;
   height: 1px;
   background: #d6d6d6;
 }
@@ -778,7 +781,7 @@ a {
 .reasons__background-city {
   width: 100%;
   height: 260px;
-  background: #81b3d2 url("../img/main-city-mobile@1x.jpg") no-repeat bottom;
+  background: url("../img/main-city-mobile@1x.jpg") no-repeat bottom;
   background-size: auto 100%;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -789,7 +792,7 @@ a {
 .reasons__background-bridge {
   width: 100%;
   height: 260px;
-  background: #81b3d2 url("../img/main-bridge-mobile@1x.jpg") no-repeat bottom;
+  background: url("../img/main-bridge-mobile@1x.jpg") no-repeat bottom;
   background-size: auto 100%;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -1066,7 +1069,6 @@ a {
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .hotel-search__map {
     background-image: url("../img/bg-map-mobile@2x.jpg");
-    background-size: 640px auto;
   }
 }
 .hotel-search__map::before {
@@ -1112,7 +1114,6 @@ a {
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
   .hotel-search__map {
     background-image: url("../img/bg-map-tablet@2x.jpg");
-    background-size: 1536px auto;
   }
 }
 @media (min-width: 1200px) {
@@ -1134,7 +1135,6 @@ a {
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
   .hotel-search__map {
     background-image: url("../img/bg-map-desktop@2x.jpg");
-    background-size: 2400px auto;
   }
 }
 .feedback {

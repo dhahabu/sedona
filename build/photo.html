@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Фото и видео</title>
     <link href="css/style.min.css" rel="stylesheet">
-    <script src="js/picturefill.js"></script>
+    <script src="js/service/picturefill.js"></script>
   </head>
   <body>
     <div style="display:none">
@@ -131,13 +131,13 @@
           </p>
           <article class="photo">
             <figure class="photo__figure">
-              <a class="photo__link" href="#">
+              <a class="photo__link photo__link--first" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
                   <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
                   <img class="photo__image photo__image--first" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы">
                 </picture>
               </a>
@@ -167,10 +167,10 @@
               <a class="photo__link" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
                   <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
                   <img class="photo__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" width="280" height="280" alt="Местная растительность">
                 </picture>
               </a>
@@ -200,10 +200,10 @@
               <a class="photo__link" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
                   <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp 1x, img/photo-roads-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
                   <img class="photo__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога на север">
                 </picture>
               </a>
@@ -233,10 +233,10 @@
               <a class="photo__link" href="#">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
                   <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
                   <img class="photo__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Мост дьявола">
                 </picture>
               </a>
@@ -261,7 +261,7 @@
               </figcaption>
             </figure>
           </article>
-          <div class="video">
+          <section class="video">
             <h3 class="video__title">Все еще сомневаетесь?</h3>
             <p class="video__description">
               Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
@@ -275,34 +275,34 @@
                 <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
                 <img class="video__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="320" height="201" alt="Видео">
               </picture>
+              <div class="video__wrapper">
+                <button class="video__toddler" type="button">
+                  <span class="visually-hidden">Ползунок</span>
+                  <span class="video__scale">
+                    <span class="video__point"></span>
+                  </span>
+                </button>
+                <button class="video__replay" type="button">
+                  <span class="visually-hidden">Повторное воспроизведение</span>
+                  <svg class="video__icon-replay" width="16" height="20">
+                    <use xlink:href="#icon-video-replay"></use>
+                  </svg>
+                </button>
+                <button class="video__subtitles" type="button">
+                  <span class="visually-hidden">Субтитры</span>
+                  <svg class="video__icon-subtitles" width="32" height="20">
+                    <use xlink:href="#icon-video-subtitles"></use>
+                  </svg>
+                </button>
+                <button class="video__fullscreen" type="button">
+                  <span class="visually-hidden">Полный экран</span>
+                  <svg class="video__icon-fullscreen" width="20" height="20">
+                    <use xlink:href="#icon-video-fullscreen"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
-            <div class="video__wrapper">
-              <button class="video__toddler" type="button">
-                <span class="visually-hidden">Ползунок</span>
-                <span class="video__scale">
-                  <span class="video__point"></span>
-                </span>
-              </button>
-              <button class="video__replay" type="button">
-                <span class="visually-hidden">Повторное воспроизведение</span>
-                <svg class="video__icon-replay" width="16" height="20">
-                  <use xlink:href="#icon-video-replay"></use>
-                </svg>
-              </button>
-              <button class="video__subtitles" type="button">
-                <span class="visually-hidden">Субтитры</span>
-                <svg class="video__icon-subtitles" width="32" height="20">
-                  <use xlink:href="#icon-video-subtitles"></use>
-                </svg>
-              </button>
-              <button class="video__fullscreen" type="button">
-                <span class="visually-hidden">Полный экран</span>
-                <svg class="video__icon-fullscreen" width="20" height="20">
-                  <use xlink:href="#icon-video-fullscreen"></use>
-                </svg>
-              </button>
-            </div>
-          </div>
+          </section>
         </section>
       </main>
       <footer class="page-footer">
@@ -348,6 +348,6 @@
         </div>
       </footer>
     </div>
-    <script src="js/close-open.min.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

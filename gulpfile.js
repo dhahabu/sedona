@@ -16,6 +16,7 @@ var server = require("browser-sync").create();
 var run = require("run-sequence");
 var del = require("del");
 var minifyJS = require("gulp-uglify");
+var concat = require("gulp-concat");
 
 gulp.task("style", function () {
   gulp.src("less/style.less")
@@ -32,10 +33,11 @@ gulp.task("style", function () {
 });
 
 gulp.task("script", function () {
-  gulp.src("js/close-open.js")
+  gulp.src("js/*.js")
+    .pipe(concat("script.js"))
     .pipe(gulp.dest("build/js"))
     .pipe(minifyJS())
-    .pipe(rename("close-open.min.js"))
+    .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"))
     .pipe(server.stream());
 });
@@ -81,7 +83,7 @@ gulp.task("copy", function () {
   return gulp.src([
     "fonts/**/*.{woff,woff2}",
     "img/**",
-    "js/**"
+    "js/service/**"
   ], {
     base: "."
   })

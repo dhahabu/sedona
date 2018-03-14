@@ -41,17 +41,12 @@ a {
 }
 
 .container {
-  width: 320px;
-  margin: 0 auto;
+  min-width: 320px;
 }
 
 @media (min-width: @tablet-width) {
   body {
     min-width: @tablet-width;
-  }
-
-  .container {
-    width: @tablet-width;
   }
 }
 
@@ -63,6 +58,7 @@ a {
 
   .container {
     width: @desktop-width;
+    margin: 0 auto;
     box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
   }
 }

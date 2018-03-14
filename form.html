@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Форма отзыва</title>
     <link href="css/style.min.css" rel="stylesheet">
-    <script src="js/picturefill.js"></script>
+    <script src="js/service/picturefill.js"></script>
   </head>
   <body>
     <div style="display:none">
@@ -55,11 +55,11 @@
               <h3 class="form__title form__title--user-information">Представьтесь:</h3>
               <div class="user-information__wrapper">
                 <label class="user-information__label" for="first-name">Имя<sup>*</sup>:</label>
-                <input class="user-information__input" type="text" id="first-name" name="first-name" placeholder="Петр">
+                <input class="user-information__input user-information__input--first-name" type="text" id="first-name" name="first-name" placeholder="Петр">
               </div>
               <div class="user-information__wrapper">
                 <label class="user-information__label" for="second-name">Фамилия<sup>*</sup>:</label>
-                <input class="user-information__input" type="text" id="second-name" name="second-name" placeholder="Иванов">
+                <input class="user-information__input user-information__input--second-name" type="text" id="second-name" name="second-name" placeholder="Иванов">
               </div>
               <div class="user-information__wrapper">
                 <label class="user-information__label" for="patronymic">Отчество:</label>
@@ -75,7 +75,7 @@
                     <use xlink:href="#icon-phone"></use>
                   </svg>
                 </label>
-                <input class="contacts__input" type="tel" id="tel" name="tel" placeholder="Введите телефон" required>
+                <input class="contacts__input contacts__input--tel" type="tel" id="tel" name="tel" placeholder="Введите телефон">
               </div>
               <div class="contacts__wrapper">
                 <label class="contacts__label" for="email">
@@ -84,7 +84,7 @@
                     <use xlink:href="#icon-mail"></use>
                   </svg>
                 </label>
-                <input class="contacts__input" type="email" id="email" name="email" placeholder="Введите e-mail" required>
+                <input class="contacts__input contacts__input--email" type="email" id="email" name="email" placeholder="Введите e-mail">
               </div>
             </div>
             <div class="form__item radio">
@@ -103,7 +103,7 @@
               </div>
             </div>
             <div class="form__item checkbox">
-              <h3 class="form__title form__title--checkbox">Посещенные достопримечательности:</h3>
+              <h3 class="form__title form__title--checkbox">Посещенные<br>достопримечательности:</h3>
               <div class="checkbox__wrapper">
                 <input class="checkbox__input visually-hidden" type="checkbox" id="bridge" name="bridge" checked>
                 <label class="checkbox__label" for="bridge">Мост Дьявола</label>
@@ -177,7 +177,7 @@
       <section class="modal-failure display-none">
         <h2 class="modal-failure__title">Что-то пошло не так!</h2>
         <p class="modal-failure__description">
-          Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+          Проверьте поля, помеченные звёздочкой, скорее всего вы забыли их заполнить
         </p>
         <button class="modal-failure__button button">OK</button>
       </section>
@@ -189,6 +189,6 @@
         <button class="modal-success__button button">Закрыть окно</button>
       </section>
     </div>
-    <script src="js/close-open.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

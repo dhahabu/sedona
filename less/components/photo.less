@@ -16,6 +16,11 @@
   margin: 0 auto 15px;
 }
 
+.photo__caption {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .photo__name {
   font: bold 14px/24px @font-family;
   color: #000000;
@@ -59,19 +64,29 @@
     width: 100%;
   }
 
+  .photo__link picture {
+    display: flex;
+    justify-content: center;
+  }
+
   .photo__image {
-    width: 324px;
+    width: auto;
+    max-width: none;
     height: 267px;
     margin: 0;
   }
 
   .photo__image--first {
-    width: 648px;
     height: 400px;
   }
 
   .photo__figure {
     margin: 0;
+    overflow: hidden;
+  }
+
+  .photo__caption {
+    width: 100%;
   }
 
   .photo-wrapper {
@@ -101,6 +116,18 @@
   .photo__like {
     margin-right: 5px;
     vertical-align: top;
+  }
+}
+
+@media (min-width: 920px) {
+  .photo__image:not(.photo__image--first) {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .photo__link:not(.photo__link--first) {
+    height: 267px;
+    overflow: hidden;
   }
 }
 

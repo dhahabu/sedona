@@ -11,14 +11,16 @@
 }
 
 .hotel-search__description {
-  margin-bottom: 35px;
-  padding: 0 20px;
+  width: 87.5%;
+  max-width: 458px;
+  margin: 0 auto 35px;
   font: normal 14px/24px @font-family;
 }
 
 .hotel-search__button {
   display: block;
-  width: 280px;
+  width: 87.5%;
+  max-width: 458px;
   margin: 0 auto 49px;
   padding: 16px 10px;
   font: bold 21px/26px @font-family;
@@ -46,7 +48,6 @@
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/bg-map-mobile@2x.jpg");
-    background-size: 640px auto;
   }
 }
 
@@ -75,14 +76,15 @@
   }
 
   .hotel-search__description {
-    margin: 0;
-    margin-bottom: 41px;
-    padding: 0 155px;
+    width: 458px;
+    max-width: none;
+    margin-bottom:  41px;
   }
 
   .hotel-search__button {
     width: 458px;
-    margin: 0 auto 58px;
+    max-width: none;
+    margin-bottom: 58px;
   }
 
   .hotel-search__map {
@@ -90,7 +92,6 @@
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-map-tablet@2x.jpg");
-      background-size: 1536px auto;
     }
   }
 
@@ -102,7 +103,6 @@
 @media (min-width: @desktop-width) {
   .hotel-search__description {
     margin-bottom: 46px;
-    padding: 0 371px;
   }
 
   .hotel-search__button {
@@ -114,7 +114,6 @@
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-map-desktop@2x.jpg");
-      background-size: 2400px auto;
     }
   }
 

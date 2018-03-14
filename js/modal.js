@@ -1,3 +1,5 @@
+// modal.js
+
 var feedbackForm = document.querySelector(".feedback__form");
 
 if (feedbackForm) {

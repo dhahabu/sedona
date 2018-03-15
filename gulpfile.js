@@ -56,7 +56,8 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("build"))
+    .pipe(server.stream());
 });
 
 gulp.task("images", function () {
@@ -85,7 +86,7 @@ gulp.task("copy", function () {
     "src/img/**",
     "src/js/service/**"
   ], {
-    base: "."
+    base: "src"
   })
   .pipe(gulp.dest("build"));
 });

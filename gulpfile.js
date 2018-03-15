@@ -99,9 +99,9 @@ gulp.task("serve", function () {
     ui: false
   });
 
-  gulp.watch("less/**/*.less", ["style"]);
-  gulp.watch("*.html", ["html"]);
-  gulp.watch("js/*.js", ["script"]);
+  gulp.watch("src/less/**/*.less", ["style"]);
+  gulp.watch("src/*.html", ["html"]);
+  gulp.watch("src/js/*.js", ["script"]);
 });
 
 gulp.task("build", function (done) {
